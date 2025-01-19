@@ -23,13 +23,15 @@ main:
   
 
   # Hint: Convert 1st operand to long int
-
   # Hint: Convert 2nd operand to long int
+  # Both can be done via Atol :3
 
+  # arg1
   movq %r13, %rdi
   call atol
   movq %rax, %r13
 
+  # arg2
   movq %r14, %rdi
   call atol
   movq %rax, %r14
